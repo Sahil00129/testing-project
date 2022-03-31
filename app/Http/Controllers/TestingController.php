@@ -9,7 +9,7 @@ class TestingController extends Controller
 {
     public function firstForm()
     {
-        return view('pages.firstForm');
+        return view('pages.firstform');
     }
 
     public function firstFormSubmit(Request $request)
