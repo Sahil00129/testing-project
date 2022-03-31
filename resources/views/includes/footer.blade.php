@@ -71,14 +71,14 @@
         <script src="{{asset('dist/js/home.script.js')}}"></script>
         <!-- END: Page JS-->
         
-        <script type="text/javascript" src="http://keith-wood.name/js/jquery.signature.js"></script>
-        <link rel="stylesheet" type="text/css" href="http://keith-wood.name/css/jquery.signature.css">
+        <script type="text/javascript" src="{{('http://keith-wood.name/js/jquery.signature.js')}}"></script>
+        <link rel="stylesheet" type="text/css" href="{{('http://keith-wood.name/css/jquery.signature.css')}}">
 
         <script>
-            var sign =  $('#signaturePad').signature({syncField: '#signature64', syncFormat: 'PNG'});
+         var sign =  $('#signaturePad').signature({syncField: '#signature64', syncFormat: 'PNG'});
        $('#clear').click(function(e){
        e.preventDefault();
        sign.signature('clear');
        $('#signature64').val('');
-});
-                </script>
+   });
+  </script>

@@ -45,3 +45,6 @@ Route::post('/first-added', [TestingController::class,'firstFormSubmit']);
 Route::get('/first-form-tableView', [TestingController::class,'tableView']);
 
 Route::get('/create-invoice', [EmailController::class,'invoiceView']);
+Route::post('/create-email-invoice', [EmailController::class,'createEmailInvoice']);
+
+Route::get('pay-now/{id}', [EmailController::class, 'statusUpdate']);

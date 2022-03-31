@@ -30,37 +30,39 @@
                                     <div class="row">                                           
                                         <div class="col-12">
                                             <form id="create_invoice" >
-                                                <div class="form-row">
+                                                <div class="form-row" method="post">
                                                     <div class="form-group col-md-6">
                                                         <label for="inputEmail4">Client Name</label>
-                                                        <input type="text" class="form-control rounded" id="validationCustom01" name="name"  required>
+                                                        <input type="text" class="form-control rounded" id="validationCustom01" name="client_name"  required>
                                                     </div>
                                                 
                                                     <div class="form-group col-md-6">
                                                         <label for="inputPassword4">Invoice Date</label>
-                                                        <input type="date" class="form-control" id="email" name="email"  required>
+                                                        <input type="date" class="form-control" id="" name="invoice_date"  required>
                                                     </div>
                                                 </div>
                                                 <div class="form-row">
                                                     <div class="form-group col-md-6">
                                                         <label for="inputEmail4">Invoice Number</label>
-                                                        <input type="text" class="form-control rounded" id="validationCustom01" name="name"  required>
+                                                        <input type="text" class="form-control rounded" id="validationCustom01" name="invoice_number"  required>
                                                     </div>
                                                 
                                                     <div class="form-group col-md-6">
                                                         <label for="inputPassword4">Amount</label>
-                                                        <input type="text" class="form-control" id="email" name="email" required>
+                                                        <input type="text" class="form-control" id="email" name="amount" required>
                                                     </div>
                                                 </div>
                                                 <div class="form-row">
                                                     <div class="form-group col-md-6">
                                                         <label for="inputEmail4">Due Date</label>
-                                                        <input type="date" class="form-control rounded" id="validationCustom01" name="name"  required>
+                                                        <input type="date" class="form-control rounded" id="validationCustom01" name="due_date"  required>
                                                     </div>
-                                                
                                                     <div class="form-group col-md-6">
-                                                        <label for="inputPassword4">Status</label>
-                                                        <input type="text" class="form-control" id="email" name="email"  required>
+                                                        <label for="inputEmail4">Due Date</label>
+                                                        <input type="email" class="form-control rounded" id="validationCustom01" name="email"  required>
+                                                    </div>
+                                                    <div class="form-group col-md-6">                                                       
+                                                        <input type="text" class="form-control" id="email" name="status" style="display: none;" value="0">
                                                     </div>
                                                 </div>
                                                 <button type="submit" class="btn btn-primary">Create</button>
@@ -73,14 +75,5 @@
                     </div>
                 </div>
                 <!-- END: Card DATA-->
-
-
-
-
-
-
-
-
-
 
 @endsection
